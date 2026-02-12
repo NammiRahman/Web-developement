@@ -1,0 +1,29 @@
+nav {
+    background: rgba(44,62,80,0.9);
+    padding: 1.5rem 2rem;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #3498db;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+#home{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('img.jpg')center\cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-content{
+    animation: fadeIn 1.5s;
+}
