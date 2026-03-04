@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>JavaScript Operators</h1>
+        <p id="subtotal"></p>
+        <p id="bulktotal"></p>
+        <script>
+            var apple_price=10.50;
+            var apple_quantity=5;
+            var orange_price=15.25;
+            var orange_quantity=10;
+            var vat=0.8;
+            var subtotal=(apple_price*apple_quantity)+(orange_price*orange_quantity);
+            document.getElementById("subtotal").innerHTML="subTotal:"+subtotal;
+            var bulktotal=subtotal*vat;
+            document.getElementById("bulktotal").innerHTML = "bulkTotal:" + bulktotal;
+
+        </script>
+    </body>
+</html>
