@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h2>JavaScript If\Else</h2>
+        <p id="time"></p>
+        <p id="greet"></p>
+        <script>
+            var time=new Date().getHours();
+            var greeting;
+            if (time<12){
+                greeting="Good morning!";
+            }
+            else if (time<18){
+                greeting="Good afternoon!";
+            }
+            else {
+                greeting="Good evening!";
+            }
+            document.getElementById("time").innerHTML="The current time is "+time;
+            document.getElementById("greet").innerHTML=greeting;
+
+        </script>
+    </body>
+</html>
