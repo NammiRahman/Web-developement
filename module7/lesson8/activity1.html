@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h3>Who are you?</h3>
+        <input type="text" id="userinput" placeholder="Enter your name here">
+        <button type="button" id="login">Login</button>
+        <h3 id="displayarea"></h3>
+        <script>
+            var input =document.getElementById("userinput");
+            var button =document.getElementById("login");
+            var output =document.getElementById("displayarea")
+            button.addEventListener("click",function(){
+                var value = input.value;
+                if (value) {
+                    output.innerText ="Welcome Back,"+value+"!";
+                    output.style.color="green";
+                    input.value="";
+                }
+                else {
+                    output.innerText ="Please enter your name.";
+                    output.style.color ="red";
+                }
+            })
+        </script>
+    </body>
+</html>
